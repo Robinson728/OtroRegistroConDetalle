@@ -106,6 +106,12 @@ namespace OtroRegistroConDetalle.UI
                 RolcomboBox.Focus();
                 paso = false;
             }
+            if(string.Equals(ClavetextBox.Text, ConfirmartextBox.Text) != true)
+            {
+                ErrorProvider.SetError(ConfirmartextBox, "La clave es distinta");
+                ConfirmartextBox.Focus();
+                paso = false;
+            }
 
             return paso;
         }
