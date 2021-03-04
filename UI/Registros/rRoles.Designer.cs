@@ -1,5 +1,5 @@
 ﻿
-namespace OtroRegistroConDetalle.UI
+namespace OtroRegistroConDetalle.UI.Registros
 {
     partial class rRoles
     {

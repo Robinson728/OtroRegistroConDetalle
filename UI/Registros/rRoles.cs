@@ -8,7 +8,7 @@ using System.Text;
 using System.Windows.Forms;
 using OtroRegistroConDetalle.BLL;
 
-namespace OtroRegistroConDetalle.UI
+namespace OtroRegistroConDetalle.UI.Registros
 {
     public partial class rRoles : Form
     {

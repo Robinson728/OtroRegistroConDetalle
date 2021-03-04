@@ -8,7 +8,7 @@ using System.Drawing;
 using System.Text;
 using System.Windows.Forms;
 
-namespace OtroRegistroConDetalle.UI
+namespace OtroRegistroConDetalle.UI.Registros
 {
     public partial class rUsuarios : Form
     {
