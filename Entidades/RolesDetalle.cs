@@ -21,13 +21,5 @@ namespace OtroRegistroConDetalle.Entidades
             PermisoId = 0;
             EsAsignado = false;
         }
-
-        public RolesDetalle(int id, int rolid, int permisoid, bool esasignado)
-        {
-            Id = id;
-            RolId = rolid;
-            PermisoId = permisoid;
-            EsAsignado = esasignado;
-        }
     }
 }

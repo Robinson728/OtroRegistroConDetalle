@@ -144,12 +144,11 @@ namespace OtroRegistroConDetalle.UI
             if (DetallesdataGridView.DataSource != null)
                 this.Detalle = (List<RolesDetalle>)DetallesdataGridView.DataSource;
 
-            this.Detalle.Add(new RolesDetalle(
-                    id: 0,
-                    rolid: (int)IdnumericUpDown.Value,
-                    permisoid: Convert.ToInt32(PermisocomboBox.Text),
-                    esasignado: AsignadocheckBox.Checked
-                )
+            this.Detalle.Add(new RolesDetalle() { 
+                    RolId = (int)IdnumericUpDown.Value,
+                    PermisoId = Convert.ToInt32(PermisocomboBox.Text),
+                    EsAsignado = AsignadocheckBox.Checked
+                }
             );
             CargarGrid();
             PermisocomboBox.Focus();
