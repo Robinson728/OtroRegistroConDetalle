@@ -57,7 +57,7 @@ namespace OtroRegistroConDetalle.UI
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(3, 5);
+            this.label1.Location = new System.Drawing.Point(3, 9);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(37, 15);
             this.label1.TabIndex = 0;
@@ -66,7 +66,7 @@ namespace OtroRegistroConDetalle.UI
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(3, 39);
+            this.label2.Location = new System.Drawing.Point(3, 45);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(69, 15);
             this.label2.TabIndex = 1;
@@ -89,7 +89,7 @@ namespace OtroRegistroConDetalle.UI
             this.groupBox1.Controls.Add(this.RemoverButton);
             this.groupBox1.Controls.Add(this.Agregarbutton);
             this.groupBox1.Controls.Add(this.label4);
-            this.groupBox1.Location = new System.Drawing.Point(3, 108);
+            this.groupBox1.Location = new System.Drawing.Point(3, 71);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(453, 260);
             this.groupBox1.TabIndex = 4;
@@ -150,14 +150,14 @@ namespace OtroRegistroConDetalle.UI
             // 
             // DescripciontextBox
             // 
-            this.DescripciontextBox.Location = new System.Drawing.Point(97, 36);
+            this.DescripciontextBox.Location = new System.Drawing.Point(97, 42);
             this.DescripciontextBox.Name = "DescripciontextBox";
-            this.DescripciontextBox.Size = new System.Drawing.Size(257, 23);
+            this.DescripciontextBox.Size = new System.Drawing.Size(359, 23);
             this.DescripciontextBox.TabIndex = 5;
             // 
             // IdnumericUpDown
             // 
-            this.IdnumericUpDown.Location = new System.Drawing.Point(97, 3);
+            this.IdnumericUpDown.Location = new System.Drawing.Point(97, 7);
             this.IdnumericUpDown.Name = "IdnumericUpDown";
             this.IdnumericUpDown.Size = new System.Drawing.Size(59, 23);
             this.IdnumericUpDown.TabIndex = 6;
@@ -165,7 +165,7 @@ namespace OtroRegistroConDetalle.UI
             // ActivocheckBox
             // 
             this.ActivocheckBox.AutoSize = true;
-            this.ActivocheckBox.Location = new System.Drawing.Point(385, 3);
+            this.ActivocheckBox.Location = new System.Drawing.Point(385, 9);
             this.ActivocheckBox.Name = "ActivocheckBox";
             this.ActivocheckBox.Size = new System.Drawing.Size(71, 19);
             this.ActivocheckBox.TabIndex = 8;
@@ -175,7 +175,7 @@ namespace OtroRegistroConDetalle.UI
             // BuscarButton
             // 
             this.BuscarButton.Image = ((System.Drawing.Image)(resources.GetObject("BuscarButton.Image")));
-            this.BuscarButton.Location = new System.Drawing.Point(172, 3);
+            this.BuscarButton.Location = new System.Drawing.Point(172, 7);
             this.BuscarButton.Name = "BuscarButton";
             this.BuscarButton.Size = new System.Drawing.Size(42, 23);
             this.BuscarButton.TabIndex = 9;
@@ -185,7 +185,7 @@ namespace OtroRegistroConDetalle.UI
             // NuevoButton
             // 
             this.NuevoButton.Image = ((System.Drawing.Image)(resources.GetObject("NuevoButton.Image")));
-            this.NuevoButton.Location = new System.Drawing.Point(73, 387);
+            this.NuevoButton.Location = new System.Drawing.Point(72, 346);
             this.NuevoButton.Name = "NuevoButton";
             this.NuevoButton.Size = new System.Drawing.Size(92, 41);
             this.NuevoButton.TabIndex = 12;
@@ -197,7 +197,7 @@ namespace OtroRegistroConDetalle.UI
             // GuardarButton
             // 
             this.GuardarButton.Image = ((System.Drawing.Image)(resources.GetObject("GuardarButton.Image")));
-            this.GuardarButton.Location = new System.Drawing.Point(181, 387);
+            this.GuardarButton.Location = new System.Drawing.Point(180, 346);
             this.GuardarButton.Name = "GuardarButton";
             this.GuardarButton.Size = new System.Drawing.Size(92, 41);
             this.GuardarButton.TabIndex = 13;
@@ -209,7 +209,7 @@ namespace OtroRegistroConDetalle.UI
             // EliminarButton
             // 
             this.EliminarButton.Image = ((System.Drawing.Image)(resources.GetObject("EliminarButton.Image")));
-            this.EliminarButton.Location = new System.Drawing.Point(290, 387);
+            this.EliminarButton.Location = new System.Drawing.Point(289, 346);
             this.EliminarButton.Name = "EliminarButton";
             this.EliminarButton.Size = new System.Drawing.Size(92, 41);
             this.EliminarButton.TabIndex = 14;
@@ -226,7 +226,7 @@ namespace OtroRegistroConDetalle.UI
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(459, 430);
+            this.ClientSize = new System.Drawing.Size(459, 392);
             this.Controls.Add(this.EliminarButton);
             this.Controls.Add(this.GuardarButton);
             this.Controls.Add(this.NuevoButton);
