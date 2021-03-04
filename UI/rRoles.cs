@@ -32,7 +32,6 @@ namespace OtroRegistroConDetalle.UI
             DescripciontextBox.Clear();
             ActivocheckBox.Checked = false;
             AsignadocheckBox.Checked = false;
-            FechadateTimePicker.Value = DateTime.Now;
             this.Detalle = new List<RolesDetalle>();
             CargarGrid();
         }
@@ -41,7 +40,6 @@ namespace OtroRegistroConDetalle.UI
         {
             IdnumericUpDown.Value = rol.RolId;
             DescripciontextBox.Text = rol.Descripcion;
-            FechadateTimePicker.Value = rol.FechaCreacion;
             this.Detalle = rol.Detalle;
             CargarGrid();
         }
@@ -52,7 +50,6 @@ namespace OtroRegistroConDetalle.UI
 
             rol.RolId = (int)IdnumericUpDown.Value;
             rol.Descripcion = DescripciontextBox.Text;
-            rol.FechaCreacion = FechadateTimePicker.Value;
             rol.Detalle = this.Detalle;
             CargarGrid();
 

@@ -33,7 +33,6 @@ namespace OtroRegistroConDetalle.UI
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(rRoles));
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.DetallesdataGridView = new System.Windows.Forms.DataGridView();
@@ -43,7 +42,6 @@ namespace OtroRegistroConDetalle.UI
             this.Agregarbutton = new System.Windows.Forms.Button();
             this.DescripciontextBox = new System.Windows.Forms.TextBox();
             this.IdnumericUpDown = new System.Windows.Forms.NumericUpDown();
-            this.FechadateTimePicker = new System.Windows.Forms.DateTimePicker();
             this.ActivocheckBox = new System.Windows.Forms.CheckBox();
             this.BuscarButton = new System.Windows.Forms.Button();
             this.NuevoButton = new System.Windows.Forms.Button();
@@ -73,15 +71,6 @@ namespace OtroRegistroConDetalle.UI
             this.label2.Size = new System.Drawing.Size(69, 15);
             this.label2.TabIndex = 1;
             this.label2.Text = "Descripcion";
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(3, 78);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(88, 15);
-            this.label3.TabIndex = 2;
-            this.label3.Text = "Fecha Creacion";
             // 
             // label4
             // 
@@ -173,15 +162,6 @@ namespace OtroRegistroConDetalle.UI
             this.IdnumericUpDown.Size = new System.Drawing.Size(59, 23);
             this.IdnumericUpDown.TabIndex = 6;
             // 
-            // FechadateTimePicker
-            // 
-            this.FechadateTimePicker.CustomFormat = "dd/MM/yyyy";
-            this.FechadateTimePicker.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.FechadateTimePicker.Location = new System.Drawing.Point(97, 72);
-            this.FechadateTimePicker.Name = "FechadateTimePicker";
-            this.FechadateTimePicker.Size = new System.Drawing.Size(101, 23);
-            this.FechadateTimePicker.TabIndex = 7;
-            // 
             // ActivocheckBox
             // 
             this.ActivocheckBox.AutoSize = true;
@@ -252,11 +232,9 @@ namespace OtroRegistroConDetalle.UI
             this.Controls.Add(this.NuevoButton);
             this.Controls.Add(this.BuscarButton);
             this.Controls.Add(this.ActivocheckBox);
-            this.Controls.Add(this.FechadateTimePicker);
             this.Controls.Add(this.IdnumericUpDown);
             this.Controls.Add(this.DescripciontextBox);
             this.Controls.Add(this.groupBox1);
-            this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Name = "rRoles";
@@ -276,13 +254,11 @@ namespace OtroRegistroConDetalle.UI
 
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.CheckBox AsignadocheckBox;
         private System.Windows.Forms.TextBox DescripciontextBox;
         private System.Windows.Forms.NumericUpDown IdnumericUpDown;
-        private System.Windows.Forms.DateTimePicker FechadateTimePicker;
         private System.Windows.Forms.CheckBox ActivocheckBox;
         private System.Windows.Forms.DataGridView DetallesdataGridView;
         private System.Windows.Forms.ComboBox PermisocomboBox;
