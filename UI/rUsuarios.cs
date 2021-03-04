@@ -116,6 +116,20 @@ namespace OtroRegistroConDetalle.UI
             return paso;
         }
 
+        private void BuscarButton_Click(object sender, EventArgs e)
+        {
+            Usuarios usuarios = new Usuarios();
+            int id;
+            int.TryParse(IdnumericUpDown.Text, out id);
+
+            usuarios = UsuariosBLL.Buscar(id);
+
+            if (usuarios != null)
+                LlenaCampo(usuarios);
+            else
+                MessageBox.Show("Transacción Fallida!!", "Fallo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+        }
+
         private void NuevoButton_Click(object sender, EventArgs e)
         {
             Limpiar();
@@ -152,20 +166,6 @@ namespace OtroRegistroConDetalle.UI
                 MessageBox.Show("Transacción Exitosa!!", "Exito", MessageBoxButtons.OK, MessageBoxIcon.Information);
             else
                 ErrorProvider.SetError(IdnumericUpDown, "Id no existente");
-        }
-
-        private void BuscarButton_Click(object sender, EventArgs e)
-        {
-            Usuarios usuarios = new Usuarios();
-            int id;
-            int.TryParse(IdnumericUpDown.Text, out id);
-
-            usuarios = UsuariosBLL.Buscar(id);
-
-            if (usuarios != null)
-                LlenaCampo(usuarios);
-            else
-                MessageBox.Show("Transacción Fallida!!", "Fallo", MessageBoxButtons.OK, MessageBoxIcon.Information);
         }
 
         private void rUsuarios_Load(object sender, EventArgs e)

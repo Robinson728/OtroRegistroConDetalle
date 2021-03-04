@@ -102,6 +102,37 @@ namespace OtroRegistroConDetalle.UI
                 MessageBox.Show("Transacción Fallida", "Fallo", MessageBoxButtons.OK, MessageBoxIcon.Error);
         }
 
+        private void Agregarbutton_Click(object sender, EventArgs e)
+        {
+            if (DetallesdataGridView.DataSource != null)
+                this.Detalle = (List<RolesDetalle>)DetallesdataGridView.DataSource;
+
+            this.Detalle.Add(new RolesDetalle()
+            {
+                RolId = (int)IdnumericUpDown.Value,
+                PermisoId = Convert.ToInt32(PermisocomboBox.Text),
+                EsAsignado = AsignadocheckBox.Checked
+            }
+            );
+            CargarGrid();
+            PermisocomboBox.Focus();
+            AsignadocheckBox.Checked = true;
+        }
+
+        private void RemoverButton_Click(object sender, EventArgs e)
+        {
+            if ((DetallesdataGridView.Rows.Count > 0) && (DetallesdataGridView.CurrentRow != null))
+            {
+                Detalle.RemoveAt(DetallesdataGridView.CurrentRow.Index);
+                CargarGrid();
+            }
+            else
+            {
+                ErrorProvider.SetError(DetallesdataGridView, "No hay filas que remover");
+                DetallesdataGridView.Focus();
+            }
+        }
+
         private void NuevoButton_Click(object sender, EventArgs e)
         {
             Limpiar();
@@ -137,36 +168,6 @@ namespace OtroRegistroConDetalle.UI
                 MessageBox.Show("Transacción Exitosa", "Exito", MessageBoxButtons.OK, MessageBoxIcon.Error);
             else
                 ErrorProvider.SetError(IdnumericUpDown, "Id no existente");
-        }
-
-        private void Agregarbutton_Click(object sender, EventArgs e)
-        {
-            if (DetallesdataGridView.DataSource != null)
-                this.Detalle = (List<RolesDetalle>)DetallesdataGridView.DataSource;
-
-            this.Detalle.Add(new RolesDetalle() { 
-                    RolId = (int)IdnumericUpDown.Value,
-                    PermisoId = Convert.ToInt32(PermisocomboBox.Text),
-                    EsAsignado = AsignadocheckBox.Checked
-                }
-            );
-            CargarGrid();
-            PermisocomboBox.Focus();
-            AsignadocheckBox.Checked = true;
-        }
-
-        private void RemoverButton_Click(object sender, EventArgs e)
-        {
-            if((DetallesdataGridView.Rows.Count > 0) && (DetallesdataGridView.CurrentRow != null))
-            {
-                Detalle.RemoveAt(DetallesdataGridView.CurrentRow.Index);
-                CargarGrid();
-            }
-            else
-            {
-                ErrorProvider.SetError(DetallesdataGridView, "No hay filas que remover");
-                DetallesdataGridView.Focus();
-            }
         }
 
         private void rRoles_Load(object sender, EventArgs e)
