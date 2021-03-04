@@ -19,7 +19,7 @@ namespace OtroRegistroConDetalle.Entidades
             Id = 0;
             RolId = 0;
             PermisoId = 0;
-            EsAsignado = false;
+            EsAsignado = true;
         }
     }
 }

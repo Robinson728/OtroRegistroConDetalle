@@ -23,7 +23,7 @@ namespace OtroRegistroConDetalle.Entidades
             RolId = 0;
             Descripcion = string.Empty;
             FechaCreacion = DateTime.Now;
-            EsActivo = false;
+            EsActivo = true;
             Detalle = new List<RolesDetalle>();
         }
     }

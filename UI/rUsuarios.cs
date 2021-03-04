@@ -26,7 +26,7 @@ namespace OtroRegistroConDetalle.UI
             ClavetextBox.Clear();
             ConfirmartextBox.Clear();
             EmailtextBox.Clear();
-            ActivocheckBox.Checked = false;
+            ActivocheckBox.Checked = true;
             FechadateTimePicker.Value = DateTime.Now;
         }
 

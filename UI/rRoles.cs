@@ -30,8 +30,8 @@ namespace OtroRegistroConDetalle.UI
             ErrorProvider.Clear();
             IdnumericUpDown.Value = 0;
             DescripciontextBox.Clear();
-            ActivocheckBox.Checked = false;
-            AsignadocheckBox.Checked = false;
+            ActivocheckBox.Checked = true;
+            AsignadocheckBox.Checked = true;
             this.Detalle = new List<RolesDetalle>();
             CargarGrid();
         }
@@ -152,7 +152,7 @@ namespace OtroRegistroConDetalle.UI
             );
             CargarGrid();
             PermisocomboBox.Focus();
-            AsignadocheckBox.Checked = false;
+            AsignadocheckBox.Checked = true;
         }
 
         private void RemoverButton_Click(object sender, EventArgs e)
