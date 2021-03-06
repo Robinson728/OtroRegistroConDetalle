@@ -55,6 +55,8 @@ namespace OtroRegistroConDetalle.UI
             this.UsuariostoolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.RolestoolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.ConsultasStripMenuItem2 = new System.Windows.Forms.ToolStripMenuItem();
+            this.cRolestoolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.cUsuariostoolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.helpToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.contentsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.indexToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -263,9 +265,24 @@ namespace OtroRegistroConDetalle.UI
             // 
             // ConsultasStripMenuItem2
             // 
+            this.ConsultasStripMenuItem2.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.cRolestoolStripMenuItem,
+            this.cUsuariostoolStripMenuItem});
             this.ConsultasStripMenuItem2.Name = "ConsultasStripMenuItem2";
             this.ConsultasStripMenuItem2.Size = new System.Drawing.Size(71, 20);
             this.ConsultasStripMenuItem2.Text = "&Consultas";
+            // 
+            // cRolestoolStripMenuItem
+            // 
+            this.cRolestoolStripMenuItem.Name = "cRolestoolStripMenuItem";
+            this.cRolestoolStripMenuItem.Size = new System.Drawing.Size(119, 22);
+            this.cRolestoolStripMenuItem.Text = "Roles";
+            // 
+            // cUsuariostoolStripMenuItem
+            // 
+            this.cUsuariostoolStripMenuItem.Name = "cUsuariostoolStripMenuItem";
+            this.cUsuariostoolStripMenuItem.Size = new System.Drawing.Size(119, 22);
+            this.cUsuariostoolStripMenuItem.Text = "Usuarios";
             // 
             // helpToolStripMenuItem
             // 
@@ -314,6 +331,7 @@ namespace OtroRegistroConDetalle.UI
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 506);
             this.Controls.Add(this.menuStrip1);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.IsMdiContainer = true;
             this.MainMenuStrip = this.menuStrip1;
             this.Name = "MainForms";
@@ -358,6 +376,8 @@ namespace OtroRegistroConDetalle.UI
         private System.Windows.Forms.ToolStripMenuItem UsuariostoolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem RolestoolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem ConsultasStripMenuItem2;
+        private System.Windows.Forms.ToolStripMenuItem cRolestoolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem cUsuariostoolStripMenuItem;
     }
 }
 

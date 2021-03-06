@@ -83,6 +83,9 @@ namespace OtroRegistroConDetalle.UI.Registros
             // 
             // groupBox1
             // 
+            this.groupBox1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.groupBox1.Controls.Add(this.DetallesdataGridView);
             this.groupBox1.Controls.Add(this.PermisocomboBox);
             this.groupBox1.Controls.Add(this.AsignadocheckBox);
@@ -98,15 +101,24 @@ namespace OtroRegistroConDetalle.UI.Registros
             // 
             // DetallesdataGridView
             // 
+            this.DetallesdataGridView.AllowUserToAddRows = false;
+            this.DetallesdataGridView.AllowUserToDeleteRows = false;
+            this.DetallesdataGridView.AllowUserToOrderColumns = true;
+            this.DetallesdataGridView.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.DetallesdataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.DetallesdataGridView.Location = new System.Drawing.Point(6, 60);
             this.DetallesdataGridView.Name = "DetallesdataGridView";
+            this.DetallesdataGridView.ReadOnly = true;
             this.DetallesdataGridView.RowTemplate.Height = 25;
             this.DetallesdataGridView.Size = new System.Drawing.Size(441, 150);
             this.DetallesdataGridView.TabIndex = 11;
             // 
             // PermisocomboBox
             // 
+            this.PermisocomboBox.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.PermisocomboBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.PermisocomboBox.FormattingEnabled = true;
             this.PermisocomboBox.Location = new System.Drawing.Point(78, 22);
@@ -116,7 +128,10 @@ namespace OtroRegistroConDetalle.UI.Registros
             // 
             // AsignadocheckBox
             // 
+            this.AsignadocheckBox.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.AsignadocheckBox.AutoSize = true;
+            this.AsignadocheckBox.Checked = true;
+            this.AsignadocheckBox.CheckState = System.Windows.Forms.CheckState.Checked;
             this.AsignadocheckBox.Location = new System.Drawing.Point(239, 24);
             this.AsignadocheckBox.Name = "AsignadocheckBox";
             this.AsignadocheckBox.Size = new System.Drawing.Size(87, 19);
@@ -126,6 +141,7 @@ namespace OtroRegistroConDetalle.UI.Registros
             // 
             // RemoverButton
             // 
+            this.RemoverButton.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.RemoverButton.Image = ((System.Drawing.Image)(resources.GetObject("RemoverButton.Image")));
             this.RemoverButton.Location = new System.Drawing.Point(6, 216);
             this.RemoverButton.Name = "RemoverButton";
@@ -138,6 +154,7 @@ namespace OtroRegistroConDetalle.UI.Registros
             // 
             // Agregarbutton
             // 
+            this.Agregarbutton.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.Agregarbutton.Image = ((System.Drawing.Image)(resources.GetObject("Agregarbutton.Image")));
             this.Agregarbutton.Location = new System.Drawing.Point(356, 14);
             this.Agregarbutton.Name = "Agregarbutton";
@@ -150,6 +167,8 @@ namespace OtroRegistroConDetalle.UI.Registros
             // 
             // DescripciontextBox
             // 
+            this.DescripciontextBox.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.DescripciontextBox.Location = new System.Drawing.Point(97, 42);
             this.DescripciontextBox.Name = "DescripciontextBox";
             this.DescripciontextBox.Size = new System.Drawing.Size(359, 23);
@@ -157,6 +176,8 @@ namespace OtroRegistroConDetalle.UI.Registros
             // 
             // IdnumericUpDown
             // 
+            this.IdnumericUpDown.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.IdnumericUpDown.Location = new System.Drawing.Point(97, 7);
             this.IdnumericUpDown.Name = "IdnumericUpDown";
             this.IdnumericUpDown.Size = new System.Drawing.Size(59, 23);
@@ -164,7 +185,10 @@ namespace OtroRegistroConDetalle.UI.Registros
             // 
             // ActivocheckBox
             // 
+            this.ActivocheckBox.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.ActivocheckBox.AutoSize = true;
+            this.ActivocheckBox.Checked = true;
+            this.ActivocheckBox.CheckState = System.Windows.Forms.CheckState.Checked;
             this.ActivocheckBox.Location = new System.Drawing.Point(385, 9);
             this.ActivocheckBox.Name = "ActivocheckBox";
             this.ActivocheckBox.Size = new System.Drawing.Size(71, 19);
@@ -174,6 +198,7 @@ namespace OtroRegistroConDetalle.UI.Registros
             // 
             // BuscarButton
             // 
+            this.BuscarButton.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.BuscarButton.Image = ((System.Drawing.Image)(resources.GetObject("BuscarButton.Image")));
             this.BuscarButton.Location = new System.Drawing.Point(172, 7);
             this.BuscarButton.Name = "BuscarButton";
@@ -184,6 +209,7 @@ namespace OtroRegistroConDetalle.UI.Registros
             // 
             // NuevoButton
             // 
+            this.NuevoButton.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
             this.NuevoButton.Image = ((System.Drawing.Image)(resources.GetObject("NuevoButton.Image")));
             this.NuevoButton.Location = new System.Drawing.Point(72, 346);
             this.NuevoButton.Name = "NuevoButton";
@@ -196,6 +222,7 @@ namespace OtroRegistroConDetalle.UI.Registros
             // 
             // GuardarButton
             // 
+            this.GuardarButton.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
             this.GuardarButton.Image = ((System.Drawing.Image)(resources.GetObject("GuardarButton.Image")));
             this.GuardarButton.Location = new System.Drawing.Point(180, 346);
             this.GuardarButton.Name = "GuardarButton";
@@ -208,6 +235,7 @@ namespace OtroRegistroConDetalle.UI.Registros
             // 
             // EliminarButton
             // 
+            this.EliminarButton.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
             this.EliminarButton.Image = ((System.Drawing.Image)(resources.GetObject("EliminarButton.Image")));
             this.EliminarButton.Location = new System.Drawing.Point(289, 346);
             this.EliminarButton.Name = "EliminarButton";
@@ -237,8 +265,10 @@ namespace OtroRegistroConDetalle.UI.Registros
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.MinimumSize = new System.Drawing.Size(465, 348);
             this.Name = "rRoles";
-            this.Text = "rRoles";
+            this.Text = "Registro de Roles";
             this.Load += new System.EventHandler(this.rRoles_Load);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();

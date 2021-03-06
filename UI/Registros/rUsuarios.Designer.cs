@@ -104,8 +104,9 @@ namespace OtroRegistroConDetalle.UI.Registros
             // 
             // label6
             // 
+            this.label6.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(451, 48);
+            this.label6.Location = new System.Drawing.Point(438, 48);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(24, 15);
             this.label6.TabIndex = 5;
@@ -113,8 +114,9 @@ namespace OtroRegistroConDetalle.UI.Registros
             // 
             // label7
             // 
+            this.label7.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(385, 82);
+            this.label7.Location = new System.Drawing.Point(372, 82);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(36, 15);
             this.label7.TabIndex = 6;
@@ -122,8 +124,9 @@ namespace OtroRegistroConDetalle.UI.Registros
             // 
             // label8
             // 
+            this.label8.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(451, 118);
+            this.label8.Location = new System.Drawing.Point(438, 118);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(80, 15);
             this.label8.TabIndex = 7;
@@ -161,7 +164,8 @@ namespace OtroRegistroConDetalle.UI.Registros
             // 
             // EmailtextBox
             // 
-            this.EmailtextBox.Location = new System.Drawing.Point(427, 79);
+            this.EmailtextBox.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.EmailtextBox.Location = new System.Drawing.Point(414, 79);
             this.EmailtextBox.Name = "EmailtextBox";
             this.EmailtextBox.Size = new System.Drawing.Size(239, 23);
             this.EmailtextBox.TabIndex = 12;
@@ -175,8 +179,11 @@ namespace OtroRegistroConDetalle.UI.Registros
             // 
             // ActivocheckBox
             // 
+            this.ActivocheckBox.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.ActivocheckBox.AutoSize = true;
-            this.ActivocheckBox.Location = new System.Drawing.Point(606, 12);
+            this.ActivocheckBox.Checked = true;
+            this.ActivocheckBox.CheckState = System.Windows.Forms.CheckState.Checked;
+            this.ActivocheckBox.Location = new System.Drawing.Point(593, 12);
             this.ActivocheckBox.Name = "ActivocheckBox";
             this.ActivocheckBox.Size = new System.Drawing.Size(60, 19);
             this.ActivocheckBox.TabIndex = 14;
@@ -185,18 +192,20 @@ namespace OtroRegistroConDetalle.UI.Registros
             // 
             // RolcomboBox
             // 
+            this.RolcomboBox.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.RolcomboBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.RolcomboBox.FormattingEnabled = true;
-            this.RolcomboBox.Location = new System.Drawing.Point(481, 45);
+            this.RolcomboBox.Location = new System.Drawing.Point(468, 45);
             this.RolcomboBox.Name = "RolcomboBox";
             this.RolcomboBox.Size = new System.Drawing.Size(185, 23);
             this.RolcomboBox.TabIndex = 15;
             // 
             // FechadateTimePicker
             // 
+            this.FechadateTimePicker.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.FechadateTimePicker.CustomFormat = "dd/MM/yyyy";
             this.FechadateTimePicker.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.FechadateTimePicker.Location = new System.Drawing.Point(537, 115);
+            this.FechadateTimePicker.Location = new System.Drawing.Point(524, 115);
             this.FechadateTimePicker.Name = "FechadateTimePicker";
             this.FechadateTimePicker.Size = new System.Drawing.Size(129, 23);
             this.FechadateTimePicker.TabIndex = 16;
@@ -213,8 +222,9 @@ namespace OtroRegistroConDetalle.UI.Registros
             // 
             // NuevoButton
             // 
+            this.NuevoButton.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
             this.NuevoButton.Image = ((System.Drawing.Image)(resources.GetObject("NuevoButton.Image")));
-            this.NuevoButton.Location = new System.Drawing.Point(170, 158);
+            this.NuevoButton.Location = new System.Drawing.Point(163, 151);
             this.NuevoButton.Name = "NuevoButton";
             this.NuevoButton.Size = new System.Drawing.Size(91, 42);
             this.NuevoButton.TabIndex = 18;
@@ -225,8 +235,9 @@ namespace OtroRegistroConDetalle.UI.Registros
             // 
             // GuardarButton
             // 
+            this.GuardarButton.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
             this.GuardarButton.Image = ((System.Drawing.Image)(resources.GetObject("GuardarButton.Image")));
-            this.GuardarButton.Location = new System.Drawing.Point(290, 158);
+            this.GuardarButton.Location = new System.Drawing.Point(283, 151);
             this.GuardarButton.Name = "GuardarButton";
             this.GuardarButton.Size = new System.Drawing.Size(91, 42);
             this.GuardarButton.TabIndex = 19;
@@ -237,8 +248,9 @@ namespace OtroRegistroConDetalle.UI.Registros
             // 
             // EliminarButton
             // 
+            this.EliminarButton.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
             this.EliminarButton.Image = ((System.Drawing.Image)(resources.GetObject("EliminarButton.Image")));
-            this.EliminarButton.Location = new System.Drawing.Point(410, 158);
+            this.EliminarButton.Location = new System.Drawing.Point(403, 151);
             this.EliminarButton.Name = "EliminarButton";
             this.EliminarButton.Size = new System.Drawing.Size(91, 42);
             this.EliminarButton.TabIndex = 20;
@@ -255,7 +267,7 @@ namespace OtroRegistroConDetalle.UI.Registros
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(668, 209);
+            this.ClientSize = new System.Drawing.Size(655, 202);
             this.Controls.Add(this.EliminarButton);
             this.Controls.Add(this.GuardarButton);
             this.Controls.Add(this.NuevoButton);
@@ -278,8 +290,9 @@ namespace OtroRegistroConDetalle.UI.Registros
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.MinimumSize = new System.Drawing.Size(671, 241);
             this.Name = "rUsuarios";
-            this.Text = "rUsuarios";
+            this.Text = "Registro de Usuarios";
             this.Load += new System.EventHandler(this.rUsuarios_Load);
             ((System.ComponentModel.ISupportInitialize)(this.IdnumericUpDown)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.ErrorProvider)).EndInit();
