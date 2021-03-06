@@ -159,7 +159,7 @@ namespace OtroRegistroConDetalle.UI.Consultas
             // InactivosRadioButton
             // 
             this.InactivosRadioButton.AutoSize = true;
-            this.InactivosRadioButton.Location = new System.Drawing.Point(13, 56);
+            this.InactivosRadioButton.Location = new System.Drawing.Point(14, 56);
             this.InactivosRadioButton.Name = "InactivosRadioButton";
             this.InactivosRadioButton.Size = new System.Drawing.Size(72, 19);
             this.InactivosRadioButton.TabIndex = 2;
