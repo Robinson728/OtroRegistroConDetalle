@@ -23,7 +23,7 @@ namespace OtroRegistroConDetalle.UI.Consultas
         {
             var lista = new List<Roles>();
 
-            if (!string.IsNullOrWhiteSpace(FiltrocomboBox.Text))
+            if (!string.IsNullOrWhiteSpace(FiltrarTextBox.Text))
             {
                 switch (FiltrocomboBox.SelectedIndex)
                 {

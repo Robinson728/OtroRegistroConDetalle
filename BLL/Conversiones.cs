@@ -10,7 +10,7 @@ namespace OtroRegistroConDetalle.BLL
     {
         public static int ToInt(string valor)
         {
-            int retorno = 0;
+            int retorno;
 
             int.TryParse(valor, out retorno);
 
