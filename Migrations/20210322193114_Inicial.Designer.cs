@@ -9,8 +9,8 @@ using OtroRegistroConDetalle.DAL;
 namespace OtroRegistroConDetalle.Migrations
 {
     [DbContext(typeof(Contexto))]
-    [Migration("20210301011626_Agregando Permisos")]
-    partial class AgregandoPermisos
+    [Migration("20210322193114_Inicial")]
+    partial class Inicial
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
@@ -136,6 +136,20 @@ namespace OtroRegistroConDetalle.Migrations
                     b.HasKey("UsuarioId");
 
                     b.ToTable("Usuarios");
+
+                    b.HasData(
+                        new
+                        {
+                            UsuarioId = 1,
+                            Activo = true,
+                            Alias = "El negro",
+                            Clave = "e3a8d8bcbdad09b078856ef5ad3e6d7172303675ed250ac091ccd3483f68c961",
+                            ConfirmarClave = "e3a8d8bcbdad09b078856ef5ad3e6d7172303675ed250ac091ccd3483f68c961",
+                            Email = "robinsonsarante1234@gmail.com",
+                            FechaIngreso = new DateTime(2021, 3, 22, 15, 31, 13, 498, DateTimeKind.Local).AddTicks(6312),
+                            Nombre = "Robinson Sarante",
+                            Rol = "Administrador"
+                        });
                 });
 
             modelBuilder.Entity("OtroRegistroConDetalle.Entidades.Permisos", b =>

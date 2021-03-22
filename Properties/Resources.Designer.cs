@@ -103,6 +103,16 @@ namespace OtroRegistroConDetalle.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap Icono_ingresar {
+            get {
+                object obj = ResourceManager.GetObject("Icono_ingresar", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap Icono_Más {
             get {
                 object obj = ResourceManager.GetObject("Icono_Más", resourceCulture);
@@ -126,6 +136,26 @@ namespace OtroRegistroConDetalle.Properties {
         internal static System.Drawing.Bitmap icono_nuevo_trabajador {
             get {
                 object obj = ResourceManager.GetObject("icono_nuevo_trabajador", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Icono_PersonaLogin {
+            get {
+                object obj = ResourceManager.GetObject("Icono_PersonaLogin", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Imagen_Login {
+            get {
+                object obj = ResourceManager.GetObject("Imagen_Login", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

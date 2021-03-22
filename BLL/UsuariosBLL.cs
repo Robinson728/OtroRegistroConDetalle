@@ -196,6 +196,28 @@ namespace OtroRegistroConDetalle.BLL
             return encontrado;
         }
 
+        public static bool Validar(string email, string clave)
+        {
+            bool paso = false;
+            Contexto contexto = new Contexto();
+
+            try
+            {
+                paso = contexto.Usuarios.Any(e => e.Email == email && e.Clave == LoginBLL.GetSHA256(clave));
+            }
+            catch (Exception)
+            {
+
+                throw;
+            }
+            finally
+            {
+                contexto.Dispose();
+            }
+
+            return paso;
+        }
+
         public static List<Usuarios> GetList(Expression<Func<Usuarios, bool>> criterio)
         {
             Contexto contexto = new Contexto();

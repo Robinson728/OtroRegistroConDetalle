@@ -26,6 +26,21 @@ namespace OtroRegistroConDetalle.DAL
                     new Permisos() { PermisoId = 2, Nombre = "Vende", Descripcion = "Se le puede realizar una venta al cliente" },
                     new Permisos() { PermisoId = 3, Nombre = "Compra", Descripcion = "El cliente puede realizar una compra" }
                 );
+
+            modelBuilder.Entity<Usuarios>().HasData(
+                new Usuarios()
+                {
+                    UsuarioId = 1,
+                    Alias = "El negro",
+                    Nombre = "Robinson Sarante",
+                    Clave = "e3a8d8bcbdad09b078856ef5ad3e6d7172303675ed250ac091ccd3483f68c961",//sarante
+                    ConfirmarClave = "e3a8d8bcbdad09b078856ef5ad3e6d7172303675ed250ac091ccd3483f68c961",
+                    Activo = true,
+                    Rol = "Administrador",
+                    Email = "robinsonsarante1234@gmail.com",
+                    FechaIngreso = DateTime.Now
+                }
+            );
         }
     }
 }

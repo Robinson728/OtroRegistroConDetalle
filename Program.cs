@@ -18,7 +18,7 @@ namespace OtroRegistroConDetalle
             Application.SetHighDpiMode(HighDpiMode.SystemAware);
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new MainForms());
+            Application.Run(new Login());
         }
     }
 }

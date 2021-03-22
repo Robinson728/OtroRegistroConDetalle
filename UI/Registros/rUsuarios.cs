@@ -50,8 +50,8 @@ namespace OtroRegistroConDetalle.UI.Registros
             usuarios.UsuarioId = (int)IdnumericUpDown.Value;
             usuarios.Alias = AliastextBox.Text;
             usuarios.Nombre = NombretextBox.Text;
-            usuarios.Clave = ClavetextBox.Text;
-            usuarios.ConfirmarClave = ConfirmartextBox.Text;
+            usuarios.Clave = LoginBLL.GetSHA256(ClavetextBox.Text);
+            usuarios.ConfirmarClave = LoginBLL.GetSHA256(ConfirmartextBox.Text);
             usuarios.Activo = ActivocheckBox.Checked;
             usuarios.Email = EmailtextBox.Text;
             usuarios.Rol = RolcomboBox.Text;
