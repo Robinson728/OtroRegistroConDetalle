@@ -24,8 +24,7 @@ namespace OtroRegistroConDetalle.UI
 
             if (UsuariosBLL.Validar(UsuarioTextBox.Text, ClaveTextBox.Text))
             {
-                this.Close();
-                var main = new MainForms();
+                MainForms main = new MainForms();
                 main.Show();
             }
             else
